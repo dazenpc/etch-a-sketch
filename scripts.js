@@ -8,10 +8,10 @@ function gridLayout(size){
     container.replaceChildren();
     for(let k = 0; k < size; k++){
         const rowDiv = document.createElement('div')
-        rowDiv.setAttribute("style", "display: flex")
+        rowDiv.setAttribute("style", "display: flex; flex: 1")
         for(let i = 0; i < size; i++){
             const div = document.createElement('div')
-            div.setAttribute("style", "height: 20px; width: 20px; border: 2px solid black;")
+            div.setAttribute("style", "border: 1px solid lightgrey; flex: 1")
             div.addEventListener("mouseover",colorThatOne)
             rowDiv.appendChild(div)
         }
